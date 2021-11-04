@@ -1,6 +1,17 @@
+import java.util.LinkedList;
+
 public class Runner {
 
-    int data;
-    Node next;
+    public static void main(String[] args) {
+
+        LinkedList list = new LinkedList();
+
+        list.add(5);
+        list.add(3,12);
+
+        System.out.println(list);
+
+
+    }
 
 }
