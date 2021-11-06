@@ -35,5 +35,16 @@ public class Queue <T> implements Iterable <T> {
         return list.removeFirst();
     }
 
+    // Add an element to the back of the queue
 
+    public void offer(T elem){
+        list.addLast(elem);
+    }
+
+    // Return an iterator to allow the user to traverse
+    // through the elements found inside the queue
+
+    @Override public java.util.Iterator <T> iterator () {
+        return list.iterator();
+    }
 }
